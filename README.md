@@ -1,4 +1,6 @@
 
+The tests were written using WebdriverIO 5.0 version
+
 
 ## Prerequisites
 
