@@ -1,7 +1,7 @@
 const URLLIST = require("./urls");
 var APP_VERSION = process.env.APP_VERSION;
 
-if(!APP_VERSION){
+if(APP_VERSION == undefined){
     APP_VERSION = "v2"
 }
 
@@ -28,7 +28,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './*nalTests.js'
+        './*Tests.js'
     ],
     // Patterns to exclude.
     exclude: [
