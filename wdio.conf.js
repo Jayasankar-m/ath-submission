@@ -1,3 +1,11 @@
+const URLLIST = require("./urls");
+var APP_VERSION = process.env.APP_VERSION;
+
+if(!APP_VERSION){
+    APP_VERSION = "v2"
+}
+
+
 exports.config = {
     //
     // ====================
@@ -20,7 +28,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './*Tests.js'
+        './*nalTests.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -43,8 +51,8 @@ exports.config = {
     // from the same test should run tests.
     //
     maxInstances: 1,
-    port: 9515, // default for ChromeDriver
-    path: '/',
+    //port: 9515, // default for ChromeDriver
+    //path: '/',
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -61,12 +69,11 @@ exports.config = {
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
-        browserVersion: '75',
-        'goog:chromeOptions' :{
-            args: ["start-maximized","no-sandbox","disable-dev-shm-usage"],
-            //binary: ".\\chromedriver\\chromedriver.exe",
-            w3c: true
-        }
+        // browserVersion: '',
+        // 'goog:chromeOptions' :{
+        //     args: ["start-maximized","no-sandbox","disable-dev-shm-usage"],
+        //     w3c: true
+        // }
     }],
     //
     // ===================
@@ -75,7 +82,7 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'info',
+    logLevel: 'silent',
     //
     // Set specific log levels per logger
     // loggers:
@@ -99,7 +106,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost',
+    baseUrl: URLLIST[APP_VERSION],
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -115,7 +122,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    //services: ['chromedriver'],
+    services: ['chromedriver'],
     
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber

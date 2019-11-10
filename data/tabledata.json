@@ -1,0 +1,44 @@
+[
+	{
+		"STATUS": "Pending",
+		"DATE": "Yesterday7:45am",
+		"DESCRIPTION": "MailChimp Services",
+		"CATEGORY": "Software",
+		"AMOUNT": "- 320.00 USD"
+	},
+	{
+		"STATUS": "Complete",
+		"DATE": "Jan 7th9:51am",
+		"DESCRIPTION": "Ebay Marketplace",
+		"CATEGORY": "Ecommerce",
+		"AMOUNT": "- 244.00 USD"
+	},
+	{
+		"STATUS": "Pending",
+		"DATE": "Jan 23rd2:7pm",
+		"DESCRIPTION": "Shopify product",
+		"CATEGORY": "Shopping",
+		"AMOUNT": "+ 17.99 USD"
+	},
+	{
+		"STATUS": "Pending",
+		"DATE": "Jan 9th7:45pm",
+		"DESCRIPTION": "Templates Inc",
+		"CATEGORY": "Business",
+		"AMOUNT": "+ 340.00 USD"
+	},
+	{
+		"STATUS": "Declined",
+		"DATE": "Jan 19th3:22pm",
+		"DESCRIPTION": "Stripe Payment Processing",
+		"CATEGORY": "Finance",
+		"AMOUNT": "+ 952.23 USD"
+	},
+	{
+		"STATUS": "Complete",
+		"DATE": "Today1:52am",
+		"DESCRIPTION": "Starbucks coffee",
+		"CATEGORY": "Restaurant / Cafe",
+		"AMOUNT": "+ 1,250.00 USD"
+	}
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "username": "",
+        "password": "",
+        "error": "Both Username and Password must be present"
+    },
+    {
+        "username": "hackathon user",
+        "password": "",
+        "error": "Password must be present"
+    },
+    {
+        "username": "",
+        "password": "only password",
+        "error": "Username must be present"
+    },
+    {
+        "username": "valid user",
+        "password": "secret password",
+        "error": ""
+    }
+]
