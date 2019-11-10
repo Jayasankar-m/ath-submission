@@ -17,13 +17,13 @@ Tested on windows platform
 
 ## Execute Tests
 
-### To execute v2 version, run the following in command prompt 
+### To execute v1 version, run the following in command prompt 
 
 ```ExecuteTestsV1.bat```
 
 
 
-### To execute v1 version, run the following in command prompt 
+### To execute v2 version, run the following in command prompt 
 
 ```ExecuteTestsV2.bat```
 
